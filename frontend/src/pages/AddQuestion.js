@@ -20,7 +20,7 @@ function AddQuestion() {
 
     try {
       // Ajuste a URL se seu backend estiver rodando em outro lugar
-      const response = await axios.post('http://localhost:5000/add_question', {
+      const response = await axios.post('https://perguntas-pimentinha.onrender.com/add_question', {
         level,
         question
       });
