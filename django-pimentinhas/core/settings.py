@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-)(q@-)i9vcfjlhkq3on11w6&ezu%fscz@gkfulo2^!$ix6r&go
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'django-perguntas-pimentinhas.onrender.com',
+]
 
 
 # Application definition
