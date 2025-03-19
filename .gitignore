@@ -1,6 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 venv/
 
+# db
+backend/db.sqlite
+
 # dependencies
 frontend/node_modules
 /.pnp

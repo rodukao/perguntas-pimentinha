@@ -35,8 +35,8 @@ function AddQuestion() {
   };
 
   return (
-    <div>
-      <h2>Adicionar Pergunta</h2>
+    <div className='main'>
+      <h2 className='pimentinhas-title'>Adicionar Pergunta</h2>
 
       {/* Exibir 5 pimentas (cliques) */}
       <div style={{ display: 'flex', marginBottom: '1rem' }}>
@@ -71,7 +71,7 @@ function AddQuestion() {
           onChange={(e) => setQuestion(e.target.value)}
         />
         <br />
-        <button type="submit">Enviar Pergunta</button>
+        <button className='botao' type="submit">Enviar Pergunta</button>
       </form>
     </div>
   );

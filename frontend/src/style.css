@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body{
+    background-color: #272727;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#root{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    max-width: 450px;
+    width: 100%;
+    background-color: #272727;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.pimentinhas-title{
+    width: 80%;
+    text-align: center;
+    color: white;
+    padding: 20px 0;
+    font-size: 2em;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.botao{
+    padding: 15px 60px;
+    background-color: #DA4416;
+    color: white;
+    border: 1px solid #202020;
+    border-radius: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+form label{
+    color: white;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+    font-style: italic;
+}
+
+textarea{
+    padding: 15px 25px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    margin-bottom: 5px;
+}
