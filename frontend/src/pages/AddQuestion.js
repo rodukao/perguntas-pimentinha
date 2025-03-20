@@ -20,7 +20,7 @@ function AddQuestion() {
 
     try {
       // Ajuste a URL se seu backend estiver rodando em outro lugar
-      const response = await axios.post('http://127.0.0.1:8000/api/add_question', {
+      const response = await axios.post('https://django-perguntas-pimentinhas.onrender.com/api/add_question', {
         level,
         question
       });
