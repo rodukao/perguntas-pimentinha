@@ -4,6 +4,8 @@ venv/
 # db
 backend/db.sqlite
 
+.env
+
 # dependencies
 frontend/node_modules
 /.pnp
