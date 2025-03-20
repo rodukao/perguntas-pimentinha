@@ -5,6 +5,7 @@ import axios from 'axios';
 function AddQuestion() {
   const [level, setLevel] = useState(1);
   const [question, setQuestion] = useState('');
+  const [isLoading, setIsLoading] = useState(false); // << novo estado
 
   const handleClickPepper = (selectedLevel) => {
     setLevel(selectedLevel);
@@ -19,6 +20,7 @@ function AddQuestion() {
     }
 
     try {
+      setIsLoading(true);
       // Ajuste a URL se seu backend estiver rodando em outro lugar
       const response = await axios.post('https://django-perguntas-pimentinhas.onrender.com/api/add_question', {
         level,
@@ -31,6 +33,8 @@ function AddQuestion() {
     } catch (error) {
       console.error(error);
       alert('Erro ao enviar pergunta');
+    } finally {
+      setIsLoading(false); // << encerra o "loading"
     }
   };
 
@@ -71,7 +75,9 @@ function AddQuestion() {
           onChange={(e) => setQuestion(e.target.value)}
         />
         <br />
-        <button className='botao' type="submit">Enviar Pergunta</button>
+        <button className='botao' type="submit" disabled={isLoading}>
+          {isLoading ? 'Enviando...' : 'Enviar Pergunta'}
+        </button>
       </form>
     </div>
   );

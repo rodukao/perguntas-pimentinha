@@ -51,6 +51,12 @@ body{
     margin-bottom: 60px;
 }
 
+.botao:disabled {
+    background-color: gray;   /* Muda a cor */
+    cursor: not-allowed;      /* Proíbe o clique */
+    opacity: 0.6;             /* Fica semitransparente */
+  }
+
 form{
     display: flex;
     flex-direction: column;
